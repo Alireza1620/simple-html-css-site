@@ -1,0 +1,227 @@
+html, body {margin:0; border:0; padding:0; height:100%;}
+body  {
+	background-color: #450707;
+	font-family:Arial, Helvetica, sans-serif;
+}
+	
+#MathWorld{
+	width: 100%;
+	height: 39%; 
+	margin: 0 auto; 
+}
+header{
+	width: 100%;
+	height: 95px;
+	background-color: #450707; 	color: #f31e1e; 
+	font-family:Tangerine, Arial, Helvetica, sans-serif;	
+
+}
+header img {width: 200px; height: 95px; float:left;}
+
+nav.nav1 
+	{background-color:#450707; 	color: white; 
+	font-family:'Risque';
+	font-size:150%;
+	float: right;
+	width: 60%;
+	height: 65px;
+	padding-top: 30px;
+	}
+
+nav.nav1 ul {list-style: none; width: 80%; margin:0; float: right; }   
+
+nav.nav1 li {display:inline;}
+nav.nav1 li:last-of-type {border-right: 0px;} 
+nav.nav1 a {color: #000000;text-decoration:none; text-align: center; padding: 1%;}
+
+nav.nav1 a:hover {color: #E14942; font-weight:bold;}
+input#menu, label {display: none;}
+
+nav.nav1 .active{
+	color: #E14942;
+	height: 50px;
+	width: 100px;
+	background-color: #C4C4C4;
+	border-radius: 50%;
+}
+
+nav.nav1 .oval {
+	height: 50px;
+	width: 100px;
+	background-color: #C4C4C4;
+	border-radius: 50%;
+  }
+
+
+section{
+    background-image: url(../images/Backgroung.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	overflow: auto; 
+	width: 100%;
+	height: 250%;
+
+}
+/* Starting Home Page */
+ .row1{
+	 padding-top: 100px;
+	 padding-left: 85px;
+	 width: 1400px;
+ }
+.column1 {
+	float: left;
+	width: 613px;
+	height: 500px;
+  }
+ .title1{
+	font-family:'Risque';
+	font-size: xx-large;
+ }
+ .title2{
+	font-family:'Risque';
+	font-size: xx-large;
+ }
+ .matn1{
+	font-family:'PT Sans Narrow';
+	font-size: x-large;
+ }
+ .matn2{
+	font-family:'PT Sans Narrow';
+	font-size: x-large;
+ }
+ .read{
+	 color: #2906FE;
+	 text-align: right;
+	 font-family:'PT Sans Narrow';
+	 font-size: x-large;
+	 text-decoration:none
+ }
+ .read:hover{color:#2906FE;font-weight: bold;}
+
+  .column2 {
+	float: right;
+	width: 613px;
+	height: 500px;
+  }
+  .column1 img{float: left;width: 248px;height: 500px;}
+  .column2 img{float: left;width: 248px;height: 500px;}
+
+  /* Starting Mandelbrot Page */
+.row2{
+	padding-top: 15px;
+	padding-left: 85px;
+	width: 1358px;
+	height: 1150px;
+}
+  .column3{
+	  width: 1358px;
+	  height: 1100px;
+  }
+  .column3 img{padding-left: 65px;}
+  .matn3{
+	font-family:'PT Sans Narrow';
+	font-size:x-large;
+  }
+
+/* Starting Biography Page */
+.row3{
+	padding-top: 15px;
+	padding-left: 85px;
+	width: 1358px;
+	height: 1850px;
+}
+  .column4{
+	  width: 1358px;
+	  height: 1800px;
+  }
+
+  .matn4{
+	font-family:'PT Sans Narrow';
+	font-size:x-large;
+  }
+/* Starting References Page*/
+.row4{
+	padding-top: 100px;
+	padding-left: 85px;
+	width: 1400px;
+}
+
+.title3{
+	font-family:'Risque';
+	font-size: xx-large;
+	text-align: center;
+}
+
+/* Starting About Us Page*/
+.row5{
+	padding-top: 55px;
+	padding-left: 85px;
+	width: 1358px;
+	height: 645px;
+}
+.about img{
+	width: 1358px;
+	height: 645px;
+}
+
+footer{
+ background-color: #450707;	color:whitesmoke;  padding: 1%;
+
+}
+
+@media only screen and (max-width:599px)
+{
+	header{
+		width: 100%;
+		height: 95px;
+		background-color: #450707; 	color: #f31e1e; 
+		font-family:Tangerine, Arial, Helvetica, sans-serif;	
+	
+	}
+	.collapsible-menu {
+		background-color: #450707;
+		padding-top: 20px;
+		width: 50%;
+		float: right;
+	   }
+	   .collapsible-menu label {
+		display: block;
+		cursor: pointer;
+		background: url(../graphics/menu.png) no-repeat left center;
+		float: right;
+	   }
+	   .collapsible-menu label img{
+		   width: 50px;
+		   height: 50px;
+	   }
+	  
+	   nav.nav1 {
+		max-height: 0;
+		height: 150px;
+		width: 100%;
+		overflow: hidden;
+		padding: 0 0 0 50px;
+		padding-right: 70px;
+	   }
+	   nav.nav1 li {display:flex;} 
+	
+	   input:checked ~ nav.nav1 {
+		max-height: 100%;
+	   }
+	   nav.nav1 .oval {
+		text-align: center;
+		height: 30px;
+		width: 200px;
+		background-color: #C4C4C4;
+		border-radius: 50%;
+	  }
+	  nav.nav1 .active{
+		color: #E14942;
+		height: 30px;
+		width: 200px;
+		background-color: #C4C4C4;
+		border-radius: 50%;
+	}
+
+	}
